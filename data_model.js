@@ -1,8 +1,8 @@
 // Store PostgreSQL database models here
-/* 
+/*
     First item in each table list is the name of the Postgres table and should match the collection name in MongoDB
     Second item in each table should be the Primary Key item
-    Third item onwards are the columns that you want to migrate from MongoDB to Postgres. The names should match the MongoDB names, unless you want to create a custom rule in the migration script 
+    Third item onwards are the columns that you want to migrate from MongoDB to Postgres. The names should match the MongoDB names, unless you want to create a custom rule in the migration script
 */
 
 module.exports.all_models = {
@@ -35,6 +35,6 @@ module.exports.all_models = {
         'mongo_dummy_data_profiles',
         '_id VARCHAR(50) PRIMARY KEY NOT NULL',
         'client TEXT',
-        'updated_at TIMESTAMPTZ', //updated_at and created_at fields can be used to auto update data dynamically
-    ],    
-}
+        'updated_at TIMESTAMPTZ', // updated_at and created_at fields can be used to auto update data dynamically
+    ],
+};
